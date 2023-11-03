@@ -1,0 +1,107 @@
+.container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: palevioletred;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+   
+}
+
+.container:hover {
+    background-color: royalblue;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-left: 620px;
+    border-bottom: 1px solid #000000;
+}
+
+header img {
+    width: 99px;
+    position: absolute;
+    left: 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+main {
+    padding: 10px;
+    
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input#file-input {
+    width: 100%;
+    padding:5px;
+    height: 70ch;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    
+}
+
+button#transcribe-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea#transcribed-text {
+    width: 90%;
+    height: 500px;
+    padding-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+
+/* Added CSS for aligning the elements */
+
+.input-area,
+.output-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-area {
+    width: 50%;
+    float: left;
+}
+
+.output-area {
+    width: 50%;
+    float: right;
+}
+
+.output-area h2,
+textarea#transcribed-text {
+    text-align: left;
+}
